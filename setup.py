@@ -57,6 +57,9 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
+    install_requires=[
+        "requests>=2.31.0",
+    ],
     entry_points={
         "console_scripts": ["superset=superset.cli.main:superset"],
         # the `postgres` and `postgres+psycopg2://` schemes were removed in SQLAlchemy 1.4  # noqa: E501
